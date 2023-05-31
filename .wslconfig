@@ -1,0 +1,49 @@
+[wsl2]
+# Reference: https://docs.microsoft.com/en-us/windows/wsl/wsl-config
+
+# kernel string The Microsoft built kernel provided inbox.
+# An absolute Windows path to a custom Linux kernel.
+# kernel=
+
+# memory size 50% of total memory on Windows or 8GB, whichever is less; on builds before 20175: 80% of your total memory on Windows.
+# How much memory to assign to the WSL 2 VM.
+memory=16GB
+
+# processors number The same number of processors on Windows.
+# How many processors to assign to the WSL 2 VM.
+processors=6
+
+# localhostForwarding boolean true
+# Boolean specifying if ports bound to wildcard or localhost in the WSL 2 VM should be connectable from the host via localhost:port.
+# localhostForwarding=true
+
+# kernelCommandLine string Blank
+# Additional kernel command line arguments.
+# kernel=
+
+# swap size 25% of memory size on Windows rounded up to the nearest GB
+# How much swap space to add to the WSL 2 VM, 0 for no swap file.
+# swap=
+
+# swapFile string %USERPROFILE%\AppData\Local\Temp\swap.vhdx
+# An absolute Windows path to the swap virtual hard disk.
+# swapFile=
+
+# guiApplications boolean true
+# Boolean to turn on or off support for GUI applications (WSLg) in WSL.
+# guiApplications=true
+
+# debugConsole boolean false
+# Boolean to turn on an output console Window that shows the contents of dmesg upon start of a WSL 2 distro instance.
+# debugConsole=false
+
+# nestedVirtualization boolean true
+# Boolean to turn on or off nested virtualization for WSL2.
+nestedVirtualization=true
+
+# vmIdleTimeout number 60000
+# The number of milliseconds that a VM is idle, before it is shut down.
+# vmIdleTimeout=60000
+
+# entries must be absolute Windows paths with escaped backslashes, for example C:\\Users\\Ben\\kernel
+# save at C:\users\Username\.wslconfig
